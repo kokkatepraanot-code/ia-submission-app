@@ -133,8 +133,6 @@ elif st.button("📁 Create IA Folder Structure"):
 
     <h3 class='section-title'>Documentation</h3>
     <p>Links to documentation:</p>
-    <ul><li><b>Instructions:</b> {instructions}</li></ul>
-    <h3>Documentation</h3>
     <ul>
         <li>Planning: <a href='Documentation/Crit_A_Planning.pdf'>Crit_A_Planning.pdf</a></li>
         <li>Design: <a href='Documentation/Crit_B_Design.pdf'>Crit_B_Design.pdf</a></li>
