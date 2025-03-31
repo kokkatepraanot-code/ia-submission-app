@@ -133,17 +133,16 @@ elif st.button("📁 Create IA Folder Structure"):
 
     <h3 class='section-title'>Documentation</h3>
     <p>Links to documentation:</p>
-    <ul><li><a href='Product'>View Product Folder</a></li><li><b>Instructions:</b> {instructions}</li></ul>
     <ul><li><b>Instructions:</b> {instructions}</li></ul>
     <h3>Documentation</h3>
     <ul>
-        <li><a href='Documentation/Crit_A_Planning.pdf'>Planning: Crit_A_Planning.pdf</a></li>
-        <li><a href='Documentation/Crit_B_Design.pdf'>Design: Crit_B_Design.pdf</a></li>
-        <li><a href='Documentation/Crit_B_Record_of_Tasks.pdf'>Record of Tasks: Crit_B_Record_of_Tasks.pdf</a></li>
-        <li><a href='Documentation/Crit_C_Development.pdf'>Development: Crit_C_Development.pdf</a></li>
-        <li><a href='Documentation/Crit_D_Video.mp4'>Video: Crit_D_Video.mp4</a></li>
-        <li><a href='Documentation/Crit_E_Evaluation.pdf'>Evaluation: Crit_E_Evaluation.pdf</a></li>
-        <li><a href='Documentation/Appendix.pdf'>Appendix: Appendix.pdf</a></li>
+        <li>Planning: <a href='Documentation/Crit_A_Planning.pdf'>Crit_A_Planning.pdf</a></li>
+        <li>Design: <a href='Documentation/Crit_B_Design.pdf'>Crit_B_Design.pdf</a></li>
+        <li>Record of Tasks: <a href='Documentation/Crit_B_Record_of_Tasks.pdf'>Crit_B_Record_of_Tasks.pdf</a></li>
+        <li>Development: <a href='Documentation/Crit_C_Development.pdf'>Crit_C_Development.pdf</a></li>
+        <li>Video: <a href='Documentation/Crit_D_Video.mp4'>Crit_D_Video.mp4</a></li>
+        <li>Evaluation: <a href='Documentation/Crit_E_Evaluation.pdf'>Crit_E_Evaluation.pdf</a></li>
+        <li>Appendix: <a href='Documentation/Appendix.pdf'>Appendix.pdf</a></li>
         <li><b>Word Count:</b> {word_count}</li>
     </ul></body></html>
     """
