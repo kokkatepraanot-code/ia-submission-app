@@ -23,7 +23,7 @@ candidate_number = f"000091_{candidate_suffix}" if candidate_suffix else ""
 candidate_folder_name = f"{candidate_number}" if candidate_number else ""
 
 if candidate_suffix:
-    st.markdown(f"**📁 Your folder will be named:** `{candidate_folder_name}_candidate`")
+    st.markdown(f"**📁 Your folder will be named:** `{candidate_folder_name}`")
 
 # --- Solution Title and Instructions ---
 st.markdown("---")
