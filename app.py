@@ -23,7 +23,7 @@ candidate_number = f"000091_{candidate_suffix}" if candidate_suffix else ""
 candidate_folder_name = f"{candidate_number}" if candidate_number else ""
 
 if candidate_suffix:
-    st.markdown(f"**📁 Your folder will be named:** `{candidate_folder_name}`")
+    st.markdown(f"**📁 Your folder will be named:** `{candidate_folder_name}_candidate`")
 
 # --- Solution Title and Instructions ---
 st.markdown("---")
@@ -107,26 +107,19 @@ elif st.button("📁 Create IA Folder Structure"):
             f.write(video.read())
         st.success(f"🎥 Video uploaded: {video.name}")
 
-    html_content = f"""
-    <html><head><title>Cover Page</title><style>
-    body {{ font-family: Arial; padding: 20px; }}
-h2 {{ color: #004466; text-align: center; }}
-    </style></head><body>
-    <h2>IB DP CS IA Cover Page</h2>
-    <p><b>Candidate number:</b> {candidate_number}</p>
-    <p><b>Solution title:</b> {solution_title}</p>
-    <h3>Product</h3>
+    html_content = f"""<h3>Product</h3>
+    <ul><li><a href='Product'>View Product Folder</a></li><li><b>Instructions:</b> {instructions}</li></ul>
     <ul><li><b>Instructions:</b> {instructions}</li></ul>
     <h3>Documentation</h3>
     <ul>
-        <li>Planning: Crit_A_Planning.pdf</li>
-        <li>Design: Crit_B_Design.pdf</li>
-        <li>Record of Tasks: Crit_B_Record_of_Tasks.pdf</li>
-        <li>Development: Crit_C_Development.pdf</li>
-        <li>Video: Crit_D_Video.mp4</li>
-        <li>Evaluation: Crit_E_Evaluation.pdf</li>
-        <li>Appendix: Appendix.pdf</li>
-        <li>Word Count: {word_count}</li>
+        <li><a href='Documentation/Crit_A_Planning.pdf'>Planning: Crit_A_Planning.pdf</a></li>
+        <li><a href='Documentation/Crit_B_Design.pdf'>Design: Crit_B_Design.pdf</a></li>
+        <li><a href='Documentation/Crit_B_Record_of_Tasks.pdf'>Record of Tasks: Crit_B_Record_of_Tasks.pdf</a></li>
+        <li><a href='Documentation/Crit_C_Development.pdf'>Development: Crit_C_Development.pdf</a></li>
+        <li><a href='Documentation/Crit_D_Video.mp4'>Video: Crit_D_Video.mp4</a></li>
+        <li><a href='Documentation/Crit_E_Evaluation.pdf'>Evaluation: Crit_E_Evaluation.pdf</a></li>
+        <li><a href='Documentation/Appendix.pdf'>Appendix: Appendix.pdf</a></li>
+        <li><b>Word Count:</b> {word_count}</li>
     </ul></body></html>
     """
     with open(base_path / "cover_page.html", "w", encoding="utf-8") as f:
