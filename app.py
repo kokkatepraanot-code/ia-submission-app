@@ -6,6 +6,7 @@ import zipfile
 
 # === Streamlit UI ===
 st.title("IB DP Computer Science IA Submission")
+st.markdown("**Created by Praanot Kokkate**")
 st.markdown("Upload your IA documents below. This will create the correct folder structure automatically.")
 
 # --- Candidate number input ---
