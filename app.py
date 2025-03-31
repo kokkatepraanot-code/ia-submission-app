@@ -23,7 +23,7 @@ candidate_number = f"000091_{candidate_suffix}" if candidate_suffix else ""
 candidate_folder_name = f"{candidate_number}" if candidate_number else ""
 
 if candidate_suffix:
-    st.markdown(f"**📁 Your folder will be named:** `{candidate_folder_name}`")
+    st.markdown(f"**📁 Your folder will be named:** `{candidate_folder_name}_candidate`")
 
 # --- Solution Title and Instructions ---
 st.markdown("---")
@@ -107,7 +107,32 @@ elif st.button("📁 Create IA Folder Structure"):
             f.write(video.read())
         st.success(f"🎥 Video uploaded: {video.name}")
 
-    html_content = f"""<h3>Product</h3>
+    html_content = f"""
+    <html>
+    <head>
+    <title>IB DP CS IA cover page</title>
+    <style>
+    body {{ font-family: Arial, sans-serif; padding: 20px; background-color: #f9f9f9; }}
+    h2 {{ text-align: center; color: #2c3e50; }}
+    ul {{ line-height: 1.8; }}
+    li b {{ color: #34495e; }}
+    a {{ color: #2980b9; text-decoration: none; }}
+    .section-title {{ color: #2c3e50; margin-top: 30px; }}
+    </style>
+    </head>
+    <body>
+    <h2>IB DP Computer Science Solution (IA) Cover Page</h2>
+    <p><b>Candidate number:</b> {candidate_number}</p>
+    <p><b>Solution title:</b> {solution_title}</p>
+
+    <h3 class='section-title'>Product</h3>
+    <ul>
+        <li><b>Product files:</b> <a href='Product'>Product folder</a></li>
+        <li><b>Product instructions:</b> {instructions}</li>
+    </ul>
+
+    <h3 class='section-title'>Documentation</h3>
+    <p>Links to documentation:</p>
     <ul><li><a href='Product'>View Product Folder</a></li><li><b>Instructions:</b> {instructions}</li></ul>
     <ul><li><b>Instructions:</b> {instructions}</li></ul>
     <h3>Documentation</h3>
