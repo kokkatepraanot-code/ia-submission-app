@@ -1,5 +1,5 @@
 # Ignore all IA student folders
-000091_*
+000091_*/
 grading_docs/
 
 # Ignore generated zip files
