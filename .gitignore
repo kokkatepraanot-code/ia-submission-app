@@ -1,8 +1,18 @@
-.vs/
+# Ignore all IA student folders
+000091_*
+grading_docs/
+
+# Ignore generated zip files
+*.zip
+
+# Ignore cache and system files
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
-*.zip
+.vs/
 *.DS_Store
+
+# Optional: ignore secret keys, env files, logs
 .env
+*.log
